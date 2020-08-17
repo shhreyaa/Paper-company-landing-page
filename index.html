@@ -36,16 +36,21 @@
       </div>
       <div class="second-head" id="second-head">
         <nav>
-          <div class="nav-wrapper">
+          <div class="nav-wrapper ">
             <div class="nav-item" id="logo">logo</div>
-            <div class="nav-item" id="nav-bar">
+            <div class="nav-item topnav" id="nav-bar">
               <ul class="nav-list" id="nav-list">
                 <li><a href="#" class="home" id="home">Home</a></li>
                 <li><a href="#" class="home" id="home">About us</a></li>
                 <li><a href="#" class="home" id="home">Product</a></li>
                 <li><a href="#" class="home" id="home">Contact us</a></li>
+                
               </ul>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars fa-2x"></i>  </a>
             </div>
+         
+            
           </div>
         </nav>
       </div>
@@ -91,6 +96,8 @@
         </div>
         <div class="about aboutText">
           <div class="about-heading" id="about-heading">About Us</div>
+          
+
           <div class="about-subText" id="about-subText">
             Donec blandit arcu nec urna euismod vestibulum. Sed vel mauris
             euismod, lacinia magna ac, efficitur massa. Suspendisse non tellus
@@ -100,12 +107,7 @@
             diam quis odio condimentum tincidunt. Aenean mattis gravida lacus,
             vel gravida dui pretium eu. In ac metus porttitor, tempor lacus ut,
             pretium nisi. Phasellus consequat lacus ac massa lacinia suscipit.
-            Pellentesque ut metus quis erat finibus suscipit et tristique leo.
-            Fusce auctor orci sed risus pellentesque, eu ultrices eros
-            vestibulum. Sed euismod enim vitae elit vulputate, vel rhoncus est
-            vulputate. Curabitur eleifend scelerisque nulla a rhoncus. Nam
-            venenatis iaculis pulvinar. Ut at leo sit amet odio suscipit
-            posuere.
+            
           </div>
           <button class="btn btn-first" id="btn-first">
             <a href="#" class="read-more" id="read-more">Read more</a>
@@ -126,7 +128,7 @@
             <div class="pInfo" id="first-info">
               Morbi pulvinar feugiat nisl, quis odo velit venenatis quis.
               Quisque viverra velit eget dictum vestibulum. Fusce ac justo
-              convallis, placerat elit eu, porta arcu.
+              convallis.
             </div>
             <a href="#" class="pView" id="first-view"
               >View <i class="fas fa-angle-double-right"></i
@@ -143,7 +145,7 @@
             <div class="pInfo" id="first-info">
               Morbi pulvinar feugiat nisl, quis odo velit venenatis quis.
               Quisque viverra velit eget dictum vestibulum. Fusce ac justo
-              convallis, placerat elit eu, porta arcu.
+              convallis.
             </div>
             <a href="#" class="pView" id="first-view"
               >View <i class="fas fa-angle-double-right"></i
@@ -160,7 +162,7 @@
             <div class="pInfo" id="first-info">
               Morbi pulvinar feugiat nisl, quis odo velit venenatis quis.
               Quisque viverra velit eget dictum vestibulum. Fusce ac justo
-              convallis, placerat elit eu, porta arcu.
+              convallis.
             </div>
             <a href="#" class="pView" id="first-view"
               >View <i class="fas fa-angle-double-right"></i
@@ -177,7 +179,7 @@
             <div class="pInfo" id="first-info">
               Morbi pulvinar feugiat nisl, quis odo velit venenatis quis.
               Quisque viverra velit eget dictum vestibulum. Fusce ac justo
-              convallis, placerat elit eu, porta arcu.
+              convallis.
             </div>
             <a href="#" class="pView" id="first-view"
               >View <i class="fas fa-angle-double-right"></i
@@ -372,4 +374,16 @@
       </div>
     </footer>
   </body>
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("nav-bar");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+  </script>
 </html>
